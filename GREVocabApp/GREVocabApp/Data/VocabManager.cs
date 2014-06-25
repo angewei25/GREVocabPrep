@@ -8,11 +8,11 @@ namespace GREVocabApp.Data
 {
     public class VocabManager
     {
-        private Dictionary<String, String> vocabulary;
+        private Dictionary<Vocab, int> vocabulary;
 
         private VocabManager() 
         {
-            vocabulary = new Dictionary<string, string>();
+            vocabulary = new Dictionary<Vocab, int>();
         }
 
         public static void Load()
