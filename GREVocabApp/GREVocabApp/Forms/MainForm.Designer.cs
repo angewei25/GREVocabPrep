@@ -30,22 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButtonQuiz = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonSave = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonQuiz = new System.Windows.Forms.ToolStripButton();
             this.splitContainerMain = new System.Windows.Forms.SplitContainer();
-            this.groupBoxDef = new System.Windows.Forms.GroupBox();
             this.listBoxWords = new System.Windows.Forms.ListBox();
-            this.textBoxDefinition = new System.Windows.Forms.TextBox();
-            this.buttonIncFreq = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBoxWord = new System.Windows.Forms.TextBox();
+            this.groupBoxDef = new System.Windows.Forms.GroupBox();
+            this.buttonIncFreq = new System.Windows.Forms.Button();
+            this.textBoxDefinition = new System.Windows.Forms.TextBox();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerMain)).BeginInit();
             this.splitContainerMain.Panel1.SuspendLayout();
             this.splitContainerMain.Panel2.SuspendLayout();
             this.splitContainerMain.SuspendLayout();
-            this.groupBoxDef.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBoxDef.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -59,15 +59,6 @@
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButtonQuiz
-            // 
-            this.toolStripButtonQuiz.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButtonQuiz.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonQuiz.Image")));
-            this.toolStripButtonQuiz.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonQuiz.Name = "toolStripButtonQuiz";
-            this.toolStripButtonQuiz.Size = new System.Drawing.Size(35, 22);
-            this.toolStripButtonQuiz.Text = "Quiz";
-            // 
             // toolStripButtonSave
             // 
             this.toolStripButtonSave.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -78,6 +69,15 @@
             this.toolStripButtonSave.Size = new System.Drawing.Size(35, 22);
             this.toolStripButtonSave.Text = "Save";
             // 
+            // toolStripButtonQuiz
+            // 
+            this.toolStripButtonQuiz.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonQuiz.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonQuiz.Image")));
+            this.toolStripButtonQuiz.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonQuiz.Name = "toolStripButtonQuiz";
+            this.toolStripButtonQuiz.Size = new System.Drawing.Size(35, 22);
+            this.toolStripButtonQuiz.Text = "Quiz";
+            // 
             // splitContainerMain
             // 
             this.splitContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -86,6 +86,7 @@
             // 
             // splitContainerMain.Panel1
             // 
+            this.splitContainerMain.Panel1.AutoScroll = true;
             this.splitContainerMain.Panel1.Controls.Add(this.listBoxWords);
             // 
             // splitContainerMain.Panel2
@@ -96,18 +97,6 @@
             this.splitContainerMain.SplitterDistance = 197;
             this.splitContainerMain.TabIndex = 1;
             // 
-            // groupBoxDef
-            // 
-            this.groupBoxDef.Controls.Add(this.buttonIncFreq);
-            this.groupBoxDef.Controls.Add(this.textBoxDefinition);
-            this.groupBoxDef.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBoxDef.Location = new System.Drawing.Point(0, 55);
-            this.groupBoxDef.Name = "groupBoxDef";
-            this.groupBoxDef.Size = new System.Drawing.Size(160, 352);
-            this.groupBoxDef.TabIndex = 0;
-            this.groupBoxDef.TabStop = false;
-            this.groupBoxDef.Text = "Definition:";
-            // 
             // listBoxWords
             // 
             this.listBoxWords.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -116,27 +105,6 @@
             this.listBoxWords.Name = "listBoxWords";
             this.listBoxWords.Size = new System.Drawing.Size(197, 407);
             this.listBoxWords.TabIndex = 0;
-            // 
-            // textBoxDefinition
-            // 
-            this.textBoxDefinition.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBoxDefinition.Location = new System.Drawing.Point(3, 16);
-            this.textBoxDefinition.Multiline = true;
-            this.textBoxDefinition.Name = "textBoxDefinition";
-            this.textBoxDefinition.ReadOnly = true;
-            this.textBoxDefinition.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxDefinition.Size = new System.Drawing.Size(154, 108);
-            this.textBoxDefinition.TabIndex = 0;
-            // 
-            // buttonIncFreq
-            // 
-            this.buttonIncFreq.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonIncFreq.Location = new System.Drawing.Point(3, 124);
-            this.buttonIncFreq.Name = "buttonIncFreq";
-            this.buttonIncFreq.Size = new System.Drawing.Size(154, 20);
-            this.buttonIncFreq.TabIndex = 1;
-            this.buttonIncFreq.Text = "Increase Fequency";
-            this.buttonIncFreq.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -158,6 +126,39 @@
             this.textBoxWord.Size = new System.Drawing.Size(154, 20);
             this.textBoxWord.TabIndex = 0;
             // 
+            // groupBoxDef
+            // 
+            this.groupBoxDef.Controls.Add(this.buttonIncFreq);
+            this.groupBoxDef.Controls.Add(this.textBoxDefinition);
+            this.groupBoxDef.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBoxDef.Location = new System.Drawing.Point(0, 55);
+            this.groupBoxDef.Name = "groupBoxDef";
+            this.groupBoxDef.Size = new System.Drawing.Size(160, 352);
+            this.groupBoxDef.TabIndex = 0;
+            this.groupBoxDef.TabStop = false;
+            this.groupBoxDef.Text = "Definition:";
+            // 
+            // buttonIncFreq
+            // 
+            this.buttonIncFreq.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonIncFreq.Location = new System.Drawing.Point(3, 124);
+            this.buttonIncFreq.Name = "buttonIncFreq";
+            this.buttonIncFreq.Size = new System.Drawing.Size(154, 20);
+            this.buttonIncFreq.TabIndex = 1;
+            this.buttonIncFreq.Text = "Increase Fequency";
+            this.buttonIncFreq.UseVisualStyleBackColor = true;
+            // 
+            // textBoxDefinition
+            // 
+            this.textBoxDefinition.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxDefinition.Location = new System.Drawing.Point(3, 16);
+            this.textBoxDefinition.Multiline = true;
+            this.textBoxDefinition.Name = "textBoxDefinition";
+            this.textBoxDefinition.ReadOnly = true;
+            this.textBoxDefinition.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxDefinition.Size = new System.Drawing.Size(154, 108);
+            this.textBoxDefinition.TabIndex = 0;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,10 +175,10 @@
             this.splitContainerMain.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerMain)).EndInit();
             this.splitContainerMain.ResumeLayout(false);
-            this.groupBoxDef.ResumeLayout(false);
-            this.groupBoxDef.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBoxDef.ResumeLayout(false);
+            this.groupBoxDef.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
