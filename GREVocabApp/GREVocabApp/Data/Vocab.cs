@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace GREVocabApp.Data
 {
-    public class Word
+    public class Vocab
     {
         public String Word { get; private set;}
         public String Definition { get; private set;}
         public float Frequency { get; private set; }
 
-        public Word(String word, String def)
+        public Vocab(String word, String def)
         {
             Word = word;
             Definition = def;
