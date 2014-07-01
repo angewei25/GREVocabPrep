@@ -34,18 +34,31 @@
             this.toolStripButtonQuiz = new System.Windows.Forms.ToolStripButton();
             this.splitContainerMain = new System.Windows.Forms.SplitContainer();
             this.listBoxWords = new System.Windows.Forms.ListBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.splitContainerWord = new System.Windows.Forms.SplitContainer();
+            this.groupBoxWord = new System.Windows.Forms.GroupBox();
             this.textBoxWord = new System.Windows.Forms.TextBox();
+            this.splitContainerDef = new System.Windows.Forms.SplitContainer();
             this.groupBoxDef = new System.Windows.Forms.GroupBox();
-            this.buttonIncFreq = new System.Windows.Forms.Button();
             this.textBoxDefinition = new System.Windows.Forms.TextBox();
+            this.buttonIncFreq = new System.Windows.Forms.Button();
+            this.groupBoxSentence = new System.Windows.Forms.GroupBox();
+            this.textBoxSentence = new System.Windows.Forms.TextBox();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerMain)).BeginInit();
             this.splitContainerMain.Panel1.SuspendLayout();
             this.splitContainerMain.Panel2.SuspendLayout();
             this.splitContainerMain.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerWord)).BeginInit();
+            this.splitContainerWord.Panel1.SuspendLayout();
+            this.splitContainerWord.Panel2.SuspendLayout();
+            this.splitContainerWord.SuspendLayout();
+            this.groupBoxWord.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerDef)).BeginInit();
+            this.splitContainerDef.Panel1.SuspendLayout();
+            this.splitContainerDef.Panel2.SuspendLayout();
+            this.splitContainerDef.SuspendLayout();
             this.groupBoxDef.SuspendLayout();
+            this.groupBoxSentence.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -55,7 +68,7 @@
             this.toolStripButtonQuiz});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(361, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(398, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -91,10 +104,9 @@
             // 
             // splitContainerMain.Panel2
             // 
-            this.splitContainerMain.Panel2.Controls.Add(this.groupBox2);
-            this.splitContainerMain.Panel2.Controls.Add(this.groupBoxDef);
-            this.splitContainerMain.Size = new System.Drawing.Size(361, 407);
-            this.splitContainerMain.SplitterDistance = 197;
+            this.splitContainerMain.Panel2.Controls.Add(this.splitContainerWord);
+            this.splitContainerMain.Size = new System.Drawing.Size(398, 407);
+            this.splitContainerMain.SplitterDistance = 194;
             this.splitContainerMain.TabIndex = 1;
             // 
             // listBoxWords
@@ -103,19 +115,38 @@
             this.listBoxWords.FormattingEnabled = true;
             this.listBoxWords.Location = new System.Drawing.Point(0, 0);
             this.listBoxWords.Name = "listBoxWords";
-            this.listBoxWords.Size = new System.Drawing.Size(197, 407);
+            this.listBoxWords.Size = new System.Drawing.Size(194, 407);
             this.listBoxWords.TabIndex = 0;
+            this.listBoxWords.SelectedValueChanged += new System.EventHandler(this.listBoxWords_SelectedValueChanged);
             // 
-            // groupBox2
+            // splitContainerWord
             // 
-            this.groupBox2.Controls.Add(this.textBoxWord);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox2.Location = new System.Drawing.Point(0, 0);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(160, 49);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Word:";
+            this.splitContainerWord.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerWord.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerWord.Name = "splitContainerWord";
+            this.splitContainerWord.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainerWord.Panel1
+            // 
+            this.splitContainerWord.Panel1.Controls.Add(this.groupBoxWord);
+            // 
+            // splitContainerWord.Panel2
+            // 
+            this.splitContainerWord.Panel2.Controls.Add(this.splitContainerDef);
+            this.splitContainerWord.Size = new System.Drawing.Size(200, 407);
+            this.splitContainerWord.SplitterDistance = 44;
+            this.splitContainerWord.TabIndex = 0;
+            // 
+            // groupBoxWord
+            // 
+            this.groupBoxWord.Controls.Add(this.textBoxWord);
+            this.groupBoxWord.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxWord.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxWord.Name = "groupBoxWord";
+            this.groupBoxWord.Size = new System.Drawing.Size(200, 44);
+            this.groupBoxWord.TabIndex = 1;
+            this.groupBoxWord.TabStop = false;
+            this.groupBoxWord.Text = "Word:";
             // 
             // textBoxWord
             // 
@@ -123,30 +154,38 @@
             this.textBoxWord.Location = new System.Drawing.Point(3, 16);
             this.textBoxWord.Name = "textBoxWord";
             this.textBoxWord.ReadOnly = true;
-            this.textBoxWord.Size = new System.Drawing.Size(154, 20);
+            this.textBoxWord.Size = new System.Drawing.Size(194, 20);
             this.textBoxWord.TabIndex = 0;
+            // 
+            // splitContainerDef
+            // 
+            this.splitContainerDef.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerDef.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerDef.Name = "splitContainerDef";
+            this.splitContainerDef.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainerDef.Panel1
+            // 
+            this.splitContainerDef.Panel1.Controls.Add(this.groupBoxDef);
+            // 
+            // splitContainerDef.Panel2
+            // 
+            this.splitContainerDef.Panel2.Controls.Add(this.buttonIncFreq);
+            this.splitContainerDef.Panel2.Controls.Add(this.groupBoxSentence);
+            this.splitContainerDef.Size = new System.Drawing.Size(200, 359);
+            this.splitContainerDef.SplitterDistance = 67;
+            this.splitContainerDef.TabIndex = 0;
             // 
             // groupBoxDef
             // 
-            this.groupBoxDef.Controls.Add(this.buttonIncFreq);
             this.groupBoxDef.Controls.Add(this.textBoxDefinition);
-            this.groupBoxDef.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBoxDef.Location = new System.Drawing.Point(0, 55);
+            this.groupBoxDef.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxDef.Location = new System.Drawing.Point(0, 0);
             this.groupBoxDef.Name = "groupBoxDef";
-            this.groupBoxDef.Size = new System.Drawing.Size(160, 352);
+            this.groupBoxDef.Size = new System.Drawing.Size(200, 67);
             this.groupBoxDef.TabIndex = 0;
             this.groupBoxDef.TabStop = false;
             this.groupBoxDef.Text = "Definition:";
-            // 
-            // buttonIncFreq
-            // 
-            this.buttonIncFreq.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonIncFreq.Location = new System.Drawing.Point(3, 124);
-            this.buttonIncFreq.Name = "buttonIncFreq";
-            this.buttonIncFreq.Size = new System.Drawing.Size(154, 20);
-            this.buttonIncFreq.TabIndex = 1;
-            this.buttonIncFreq.Text = "Increase Fequency";
-            this.buttonIncFreq.UseVisualStyleBackColor = true;
             // 
             // textBoxDefinition
             // 
@@ -156,14 +195,47 @@
             this.textBoxDefinition.Name = "textBoxDefinition";
             this.textBoxDefinition.ReadOnly = true;
             this.textBoxDefinition.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxDefinition.Size = new System.Drawing.Size(154, 108);
+            this.textBoxDefinition.Size = new System.Drawing.Size(194, 51);
             this.textBoxDefinition.TabIndex = 0;
+            // 
+            // buttonIncFreq
+            // 
+            this.buttonIncFreq.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonIncFreq.Location = new System.Drawing.Point(0, 126);
+            this.buttonIncFreq.Name = "buttonIncFreq";
+            this.buttonIncFreq.Size = new System.Drawing.Size(200, 20);
+            this.buttonIncFreq.TabIndex = 1;
+            this.buttonIncFreq.Text = "Increase Fequency";
+            this.buttonIncFreq.UseVisualStyleBackColor = true;
+            this.buttonIncFreq.Click += new System.EventHandler(this.buttonIncFreq_Click);
+            // 
+            // groupBoxSentence
+            // 
+            this.groupBoxSentence.Controls.Add(this.textBoxSentence);
+            this.groupBoxSentence.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBoxSentence.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxSentence.Name = "groupBoxSentence";
+            this.groupBoxSentence.Size = new System.Drawing.Size(200, 126);
+            this.groupBoxSentence.TabIndex = 2;
+            this.groupBoxSentence.TabStop = false;
+            this.groupBoxSentence.Text = "Sample Sentence:";
+            // 
+            // textBoxSentence
+            // 
+            this.textBoxSentence.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxSentence.Location = new System.Drawing.Point(3, 16);
+            this.textBoxSentence.Multiline = true;
+            this.textBoxSentence.Name = "textBoxSentence";
+            this.textBoxSentence.ReadOnly = true;
+            this.textBoxSentence.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxSentence.Size = new System.Drawing.Size(194, 108);
+            this.textBoxSentence.TabIndex = 1;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(361, 432);
+            this.ClientSize = new System.Drawing.Size(398, 432);
             this.Controls.Add(this.splitContainerMain);
             this.Controls.Add(this.toolStrip1);
             this.Name = "MainForm";
@@ -175,10 +247,20 @@
             this.splitContainerMain.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerMain)).EndInit();
             this.splitContainerMain.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.splitContainerWord.Panel1.ResumeLayout(false);
+            this.splitContainerWord.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerWord)).EndInit();
+            this.splitContainerWord.ResumeLayout(false);
+            this.groupBoxWord.ResumeLayout(false);
+            this.groupBoxWord.PerformLayout();
+            this.splitContainerDef.Panel1.ResumeLayout(false);
+            this.splitContainerDef.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerDef)).EndInit();
+            this.splitContainerDef.ResumeLayout(false);
             this.groupBoxDef.ResumeLayout(false);
             this.groupBoxDef.PerformLayout();
+            this.groupBoxSentence.ResumeLayout(false);
+            this.groupBoxSentence.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,8 +276,12 @@
         private System.Windows.Forms.ListBox listBoxWords;
         private System.Windows.Forms.Button buttonIncFreq;
         private System.Windows.Forms.TextBox textBoxDefinition;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBoxWord;
         private System.Windows.Forms.TextBox textBoxWord;
+        private System.Windows.Forms.GroupBox groupBoxSentence;
+        private System.Windows.Forms.TextBox textBoxSentence;
+        private System.Windows.Forms.SplitContainer splitContainerWord;
+        private System.Windows.Forms.SplitContainer splitContainerDef;
     }
 }
 

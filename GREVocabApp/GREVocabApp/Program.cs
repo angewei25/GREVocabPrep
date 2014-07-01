@@ -19,7 +19,7 @@ namespace GREVocabApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            VocabManager.Load();
+            VocabManager.GetInstance.Load();
             var mainVM = new MainVM();
             Application.Run(new MainForm(mainVM));
         }
