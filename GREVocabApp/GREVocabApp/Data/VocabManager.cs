@@ -102,15 +102,6 @@ namespace GREVocabApp.Data
             new Tuple<String, String, String>("autonomous", "self-governing", "Although the University of California at Berkeley is just one part of the state university system, in many ways Cal Berkeley is autonomous, for it runs several programs that are not subject to outside control."),
             new Tuple<String, String, String>("aver", "assert confidently or declare; as used in law, state formally as a fact", "The self-proclaimed psychic averred that, because he had extrasensory perception on which to base his predictions, he needed no seismographs or other gadgets in order to foretell earthquakes."),
             
-            new Tuple<String, String, String>("B", "", ""),
-            new Tuple<String, String, String>("banal", "hackneyed; commonplace; trite; lacking originality", "The hack writer's worn-out clickes made his comic sketch seem banal. He even resorted to the banality of having someone slip on a banana peel!"),
-            new Tuple<String, String, String>("belie", "contradict; give a false impression", "His coarse, hard-bitten exterior belied his innate sensitivity."),
-            new Tuple<String, String, String>("beneficent", "kindly; doing good", "The overgenerous philanthropist had to curb his beneficent impulses before he gave away all his money and left himself with nothing."),
-            new Tuple<String, String, String>("bolster", "support; reinforce", "The debaters amassed file boxes full of evidence to bolster their arguments."),
-            new Tuple<String, String, String>("bombastic", "pompous; using inflated language", "Puffed up with conceit, the orator spoke in such a bombastic manner that we longed to deflate him."),
-            new Tuple<String, String, String>("boorish", "rude; insensitive", "Though Mr.Potts constantly interupted his wife, she ignored his boorish behavior, for she had lost hope of teaching him courtesy."),
-            new Tuple<String, String, String>("burgeoning", "flourishing; growing quickly; putting out buds", "Phil and Adam could scarcely keep up with the burgeoning demand for the services of their production company."),
-
         };
 
         private static List<Tuple<String, String, String>> Vocab = new List<Tuple<String, String, String>>
