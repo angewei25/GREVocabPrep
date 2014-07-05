@@ -69,7 +69,7 @@ namespace GREVocabApp.Data
             new Tuple<String, String, String>("abate", "subside or moderate", "Rather than leaving immediately, they waited for the storm to abate."),
             new Tuple<String, String, String>("aberrant", "abnormal or deviant", "Given the aberrant nature of the data, we came to doubt the validity of the entire experiment."),
             new Tuple<String, String, String>("abeyance", "suspended action", "The deal was held in abeyance until her arrival."),
-            new Tuple<String, String, String>("absond", "depart secretly and hide", "The teller who absconded with the bonds went uncaptured until soemone recognized him from his photograph on America's Most Wanted."),
+            new Tuple<String, String, String>("abscond", "depart secretly and hide", "The teller who absconded with the bonds went uncaptured until soemone recognized him from his photograph on America's Most Wanted."),
             new Tuple<String, String, String>("abstemious", "sparing in eating and drinking; temperate", "Concerned whether her vegetarian son's abstemious diet provided him with sufficient protein, the worried mother pressed food on him."),
             new Tuple<String, String, String>("admonish", "warn; reprove", "when her courtiers questioned her religious beliefs, Mary Stuart admonished them, declaring that she would worship as she pleased."),
             new Tuple<String, String, String>("adulterate", "make impure by adding inferior or tainted substances", "It is a crime to adulterate foods without informing the buyer; when consumers learned that Beechnut had adulterated its apple juice by mixing the juice with water, they protested vigorously."),
